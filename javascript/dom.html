@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+    </div>
+    <p>
+        jaykrut kotadiya
+    </p>
+
+    <script>
+        document.getElementById("root").innerHTML="jaykrut"
+        let div=document.getElementById("root")
+        var newNode=document.createElement("p")
+        var text=document.createTextNode("hello")
+        newNode.appendChild(text)
+        div.style.color="red"
+        div.appendChild(newNode)
+
+    </script>
+</body>
+</html>

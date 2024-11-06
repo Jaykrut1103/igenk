@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="btn1">
+        
+        Button 1
+        <button id="btn2">Button 2</button>
+    </div>
+    <br/>
+   
+    <script>
+        let bnt=document.getElementById("btn1")
+        let bnt2=document.getElementById("btn2")
+        btn2.addEventListener("click",function(event){
+            alert("child event")
+            event.stopPropagation()
+        })
+        function showAlert() {
+    alert("Button Clicked!");
+  }
+        bnt.addEventListener("click",showAlert)
+        // btn.removeEventListener("click",showAlert)
+    </script>
+</body>
+    
+</html>
